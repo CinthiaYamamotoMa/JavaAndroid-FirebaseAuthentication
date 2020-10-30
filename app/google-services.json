@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "432910541509",
+    "firebase_url": "https://login-cinthia.firebaseio.com",
+    "project_id": "login-cinthia",
+    "storage_bucket": "login-cinthia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432910541509:android:5184108e0a15c5a58d06ac",
+        "android_client_info": {
+          "package_name": "com.google.codelabs.mdc.java.FirebaseAuth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432910541509-mu4lsr588ei5r8olgbn8mm05i92t9vpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu7bmvzDrbxoMIf_ayUYeX9f_jl22RWUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432910541509-mu4lsr588ei5r8olgbn8mm05i92t9vpd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
