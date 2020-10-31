@@ -1,12 +1,17 @@
 <resources>
     <string name="shr_app_name">Firebase Authentication - ADSMA6</string>
     <string name="input_email">E-mail</string>
+    <string name="login">Login</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="tela_sucesso">Você acessou sua conta</string>
+    <string name="tela_login">Acesse sua conta</string>
+    <string name="tela_cadastro">Cadastre-se com seu e-mail</string>
     <string name="input_password">Senha</string>
     <string name="shr_button_next">Entrar</string>
     <string name="button_sign">Entrar</string>
     <string name="button_register">Cadastrar</string>
     <string name="shr_button_cancel">Cancel</string>
-    <string name="shr_error_password">Password must contain at least 8 characters.</string>
+    <string name="shr_error_password">A senha deve conter no mínimo 6 caracteres</string>
     <string name="shr_filter_title">Filter</string>
     <string name="shr_search_title">Search</string>
     <string name="shr_product_title">Title</string>

@@ -24,16 +24,16 @@
             android:layout_marginBottom="16dp"
             app:srcCompat="@drawable/shr_logo" />
 
+        <!-- Snippet from "Add text fields" section goes here. -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="132dp"
-            android:text="@string/shr_app_name"
+            android:text="@string/tela_cadastro"
             android:textAllCaps="true"
             android:textSize="16sp" />
 
-        <!-- Snippet from "Add text fields" section goes here. -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email"
             android:layout_width="match_parent"
@@ -68,25 +68,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/registrar_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:text="@string/button_register" />
-
-            <TextView
-                android:id="@+id/textViewLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="15dp"
-                android:text="Já possui uma conta? Faça login"
-                android:gravity="center"
-                android:textColor="@color/colorAccent"
-                />
-
         </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Já possui uma conta? Faça login"
+            android:textColor="@color/cardview_dark_background" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registrar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_register" />
         <!-- Snippet from "Add buttons" section goes here. -->
 
     </LinearLayout>
