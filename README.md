@@ -1,3 +1,8 @@
-# MDC-101 for Material Components for Android (Java)
+# Java Android - Firebase Authentication
 
-Contains starter code structure for the MDC-101 Java codelab.
+ADSMA6 - Tópicos Especiais de Informática
+Integrantes:
+    Cinthia Yamamoto Ma
+    Kelvin Garcia
+    Matheus Grillo
+    Welington Diogo
