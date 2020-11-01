@@ -25,7 +25,6 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextInputEditText editTextEmail, editTextPassword;
-//    ContentLoadingProgressBar progressBar;
 
     private FirebaseAuth mAuth;
 
@@ -36,7 +35,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         editTextEmail = (TextInputEditText) findViewById(R.id.email_edit_text);
         editTextPassword = (TextInputEditText) findViewById(R.id.password_edit_text);
-//        progressBar = (ContentLoadingProgressBar) findViewById(R.id.progress_bar);
 
         TextView textViewLogin = (TextView) findViewById((R.id.textViewLogin));
         SpannableString content = new SpannableString("Já possui uma conta? Faça login");
@@ -77,13 +75,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             return;
         }
 
-//        progressBar.setVisibility(View.VISIBLE);
-
         mAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-//                    progressBar.setVisibility(View.GONE);
+
                     if (task.isSuccessful()) {
                         finish();
                         startActivity(new Intent(SignUpActivity.this, WelcomeActivity.class));

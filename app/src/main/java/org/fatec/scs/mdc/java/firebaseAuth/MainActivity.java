@@ -23,7 +23,6 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextInputEditText editTextEmail, editTextPassword;
-//    ContentLoadingProgressBar progressBar;
 
     private FirebaseAuth mAuth;
 
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         editTextEmail = (TextInputEditText) findViewById(R.id.email_edit_text);
         editTextPassword = (TextInputEditText) findViewById(R.id.password_edit_text);
-//        progressBar = (ProgressBar) findViewById(R.id.progressbar);
 
         TextView textViewLogin = (TextView) findViewById((R.id.textViewSignup));
         SpannableString content = new SpannableString("Ainda não possui uma conta? Registre-se");
@@ -75,12 +73,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-//        progressBar.setVisibility(View.VISIBLE);
-
         mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-//                progressBar.setVisibility(View.GONE);
+
                 if (task.isSuccessful()) {
                     finish();
                     Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
@@ -96,11 +92,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onStart() {
         super.onStart();
-
-//        if (mAuth.getCurrentUser() != null) {
-//            finish();
-//            startActivity(new Intent(this, SignUpActivity.class));
-//        }
     }
 
     @Override
