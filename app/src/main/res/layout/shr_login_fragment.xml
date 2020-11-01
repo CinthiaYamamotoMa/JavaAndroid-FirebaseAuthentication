@@ -97,7 +97,6 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Ainda não possui uma conta? Registre-se"
             android:textColor="@color/cardview_dark_background"
             app:layout_constraintBottom_toTopOf="@+id/entrar_button"
             app:layout_constraintTop_toBottomOf="@+id/password_login"

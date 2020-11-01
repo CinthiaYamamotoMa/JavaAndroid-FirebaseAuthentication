@@ -38,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         editTextPassword = (TextInputEditText) findViewById(R.id.password_edit_text);
 //        progressBar = (ProgressBar) findViewById(R.id.progressbar);
 
+        TextView textViewLogin = (TextView) findViewById((R.id.textViewSignup));
+        SpannableString content = new SpannableString("Ainda não possui uma conta? Registre-se");
+        content.setSpan(new UnderlineSpan(), 28, content.length(), 0);
+        textViewLogin.setText(content);
+
         findViewById(R.id.entrar_button).setOnClickListener(this);
         findViewById(R.id.textViewSignup).setOnClickListener(this);
     }

@@ -13,6 +13,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile_activity);
 
+        findViewById(R.id.login).setOnClickListener(this);
+        findViewById(R.id.registrar).setOnClickListener(this);
     }
 
     @Override
