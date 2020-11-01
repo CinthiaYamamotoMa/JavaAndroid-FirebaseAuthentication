@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Shrine">
         <activity android:name="org.fatec.scs.mdc.java.firebaseAuth.SignUpActivity"/>
-        <activity android:name="org.fatec.scs.mdc.java.firebaseAuth.ProfileActivity"/>
+        <activity android:name="org.fatec.scs.mdc.java.firebaseAuth.WelcomeActivity"/>
         <activity android:name="org.fatec.scs.mdc.java.firebaseAuth.MainActivity"
             android:label="Login">
             <intent-filter>

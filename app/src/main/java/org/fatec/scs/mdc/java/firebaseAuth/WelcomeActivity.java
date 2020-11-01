@@ -9,11 +9,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.codelabs.mdc.java.firebaseAuth.R;
 
-public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
+public class WelcomeActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.profile_activity);
+        setContentView(R.layout.welcome_activity);
 
         findViewById(R.id.login).setOnClickListener(this);
         findViewById(R.id.registrar).setOnClickListener(this);
