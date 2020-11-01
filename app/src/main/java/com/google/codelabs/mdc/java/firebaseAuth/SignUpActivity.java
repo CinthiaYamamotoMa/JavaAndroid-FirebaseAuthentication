@@ -3,6 +3,8 @@ package com.google.codelabs.mdc.java.firebaseAuth;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -40,6 +42,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         editTextEmail = (TextInputEditText) findViewById(R.id.email_edit_text);
         editTextPassword = (TextInputEditText) findViewById(R.id.password_edit_text);
 //        progressBar = (ContentLoadingProgressBar) findViewById(R.id.progress_bar);
+
+        TextView textViewLogin = (TextView) findViewById((R.id.textViewLogin));
+        SpannableString content = new SpannableString("Já possui uma conta? Faça login");
+        content.setSpan(new UnderlineSpan(), 21, content.length(), 0);
+        textViewLogin.setText(content);
 
         mAuth = FirebaseAuth.getInstance();
 
