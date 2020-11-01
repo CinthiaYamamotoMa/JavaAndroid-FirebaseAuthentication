@@ -8,6 +8,8 @@
     <string name="tela_cadastro">Cadastre-se com seu e-mail</string>
     <string name="input_password">Senha</string>
     <string name="shr_button_next">Entrar</string>
+    <string name="possui_conta">Já possui uma conta? <u>Faça login</u></string>
+
     <string name="button_sign">Entrar</string>
     <string name="button_register">Cadastrar</string>
     <string name="shr_button_cancel">Cancel</string>

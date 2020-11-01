@@ -34,11 +34,11 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="48dp"
             android:layout_marginBottom="16dp"
-            app:srcCompat="@drawable/shr_logo"
             app:layout_constraintBottom_toTopOf="@+id/texto_cadastro"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@android:drawable/btn_star" />
 
         <TextView
             android:id="@+id/texto_cadastro"
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Já possui uma conta? Faça login"
+            android:text="@string/possui_conta"
             android:textColor="@color/cardview_dark_background"
             app:layout_constraintBottom_toTopOf="@+id/registrar_button"
             app:layout_constraintEnd_toEndOf="parent"
