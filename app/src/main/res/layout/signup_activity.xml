@@ -4,42 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/loginPageBackgroundColor"
-    tools:context=".SignUpActivity">
+    android:background="@color/cardview_light_background">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="vertical"
-        android:padding="24dp"
-        android:paddingTop="16dp">
+        tools:context=".SignUpActivity">
+
+        <!-- Snippet from "Add text fields" section goes here. -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="48dp"
+            android:text="Cadastro"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="31sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <ImageView
+            android:id="@+id/logo"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="48dp"
             android:layout_marginBottom="16dp"
-            app:srcCompat="@drawable/shr_logo" />
+            app:srcCompat="@drawable/shr_logo"
+            app:layout_constraintBottom_toTopOf="@+id/texto_cadastro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <!-- Snippet from "Add text fields" section goes here. -->
         <TextView
+            android:id="@+id/texto_cadastro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="132dp"
             android:text="@string/tela_cadastro"
             android:textAllCaps="true"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:layout_editor_absoluteX="90dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:hint="@string/input_email">
+            android:layout_margin="16dp"
+            android:hint="@string/input_email"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto_cadastro" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email_edit_text"
@@ -53,9 +76,13 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="4dp"
+            android:layout_margin="16dp"
             android:hint="@string/input_password"
-            app:errorEnabled="true">
+            app:errorEnabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/textViewLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password_edit_text"
@@ -64,12 +91,6 @@
                 android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </RelativeLayout>
-
         <TextView
             android:id="@+id/textViewLogin"
             android:layout_width="match_parent"
@@ -77,14 +98,21 @@
             android:gravity="center"
             android:padding="15dp"
             android:text="Já possui uma conta? Faça login"
-            android:textColor="@color/cardview_dark_background" />
+            android:textColor="@color/cardview_dark_background"
+            app:layout_constraintBottom_toTopOf="@+id/registrar_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/registrar_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_register" />
+            android:text="@string/button_register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
         <!-- Snippet from "Add buttons" section goes here. -->
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
