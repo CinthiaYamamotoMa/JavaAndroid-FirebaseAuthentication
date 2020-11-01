@@ -3,7 +3,7 @@
     <string name="input_email">E-mail</string>
     <string name="login">Login</string>
     <string name="cadastro">Cadastro</string>
-    <string name="tela_sucesso">Você acessou sua conta</string>
+    <string name="tela_sucesso">Bem-vindo. Você acessou sua conta</string>
     <string name="tela_login">Acesse sua conta</string>
     <string name="tela_cadastro">Cadastre-se com seu e-mail</string>
     <string name="input_password">Senha</string>

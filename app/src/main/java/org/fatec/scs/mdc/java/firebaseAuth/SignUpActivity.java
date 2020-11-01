@@ -75,11 +75,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             return;
         }
 
+
         mAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-
                     if (task.isSuccessful()) {
                         finish();
                         startActivity(new Intent(SignUpActivity.this, WelcomeActivity.class));
@@ -96,7 +96,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View view) {
-        Log.d("INFO", "Switch");
         switch(view.getId()) {
 
             case R.id.registrar_button:
