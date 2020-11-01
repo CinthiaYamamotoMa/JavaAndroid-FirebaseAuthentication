@@ -50,27 +50,30 @@
             android:textAllCaps="true"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/email_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logo"
-            app:layout_constraintVertical_chainStyle="packed"
-            tools:layout_editor_absoluteX="130dp" />
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:hint="@string/input_email"
             app:layout_constraintBottom_toTopOf="@+id/password_login"
             app:layout_constraintTop_toBottomOf="@+id/texto_login"
             app:layout_constraintVertical_chainStyle="packed"
-            tools:layout_editor_absoluteX="16dp"
-            android:hint="@string/input_email">
+            tools:layout_editor_absoluteX="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:lines="1"/>
+                android:lines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -82,13 +85,13 @@
             app:errorEnabled="true"
             app:layout_constraintBottom_toTopOf="@+id/textViewSignup"
             app:layout_constraintTop_toBottomOf="@+id/email_login"
-            app:layout_constraintVertical_chainStyle="packed" >
+            app:layout_constraintVertical_chainStyle="packed">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -107,7 +110,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_sign"
-            app:icon="@drawable/abc_vector_test"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

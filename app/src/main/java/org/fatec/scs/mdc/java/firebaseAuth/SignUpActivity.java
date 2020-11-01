@@ -82,10 +82,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         finish();
+                        Toast.makeText(getApplicationContext(), "Registro realizado com sucesso", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(SignUpActivity.this, WelcomeActivity.class));
                     } else {
                         if(task.getException() instanceof FirebaseAuthUserCollisionException){
-                            Toast.makeText(getApplicationContext(), "Registro realizado com sucesso", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "O e-mail já está sendo utilizado", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(getApplicationContext(), "Algum erro ocorreu", Toast.LENGTH_SHORT).show();
                         }
