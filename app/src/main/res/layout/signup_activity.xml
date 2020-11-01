@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".SignUpActivity">
+        tools:context="org.fatec.scs.mdc.java.firebaseAuth.SignUpActivity">
 
         <!-- Snippet from "Add text fields" section goes here. -->
         <TextView

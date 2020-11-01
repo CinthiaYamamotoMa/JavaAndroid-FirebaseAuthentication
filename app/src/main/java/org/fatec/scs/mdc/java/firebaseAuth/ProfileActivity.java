@@ -1,4 +1,4 @@
-package com.google.codelabs.mdc.java.firebaseAuth;
+package org.fatec.scs.mdc.java.firebaseAuth;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.codelabs.mdc.java.firebaseAuth.R;
 
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
     @Override

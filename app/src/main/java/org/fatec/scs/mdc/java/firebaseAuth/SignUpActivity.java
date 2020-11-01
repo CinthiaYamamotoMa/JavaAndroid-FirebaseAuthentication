@@ -1,27 +1,22 @@
-package com.google.codelabs.mdc.java.firebaseAuth;
+package org.fatec.scs.mdc.java.firebaseAuth;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Html;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.widget.ContentLoadingProgressBar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.codelabs.mdc.java.firebaseAuth.R;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;

@@ -1,4 +1,4 @@
-package com.google.codelabs.mdc.java.firebaseAuth;
+package org.fatec.scs.mdc.java.firebaseAuth;
 
 import android.content.Intent;
 import android.os.Bundle;
