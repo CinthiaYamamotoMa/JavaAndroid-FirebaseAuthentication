@@ -12,7 +12,7 @@
         tools:context="org.fatec.scs.mdc.java.firebaseAuth.SignUpActivity">
 
         <!-- Snippet from "Add text fields" section goes here. -->
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/logo"
             android:layout_width="64dp"
             android:layout_height="64dp"
@@ -40,7 +40,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:srcCompat="@android:drawable/btn_star" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/texto_cadastro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/textViewLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
